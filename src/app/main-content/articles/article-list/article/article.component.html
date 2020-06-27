@@ -1,0 +1,11 @@
+<table id="article" *ngIf="amount > 0" class="table">
+    <tr>
+        <td>{{id}} <button type="button" class="btn btn-danger" (click)="delete()">Delete from store</button></td>
+        <td>{{name}}</td>
+        <td>{{price}} zł</td>
+        <td>
+            <button type="button" class="btn btn-danger" (click)="onMinus()">-</button> {{amount}} szt. 
+            <button type="button" class="btn btn-success" (click)="onPlus()">+</button>
+        </td>
+    </tr>
+</table>

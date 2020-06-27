@@ -1,0 +1,5 @@
+<table id="article" class="table">
+    <tr><th>Id:</th><th>Name:</th><th>Price:</th><th>Amount:</th></tr>
+</table>
+<app-article *ngFor="let article of articlesList" [id]="article.id" 
+[name]="article.name" [price]="article.price" [amount]="article.amount"></app-article>
